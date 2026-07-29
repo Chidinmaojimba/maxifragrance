@@ -1,0 +1,67 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  min-height: 90vh;
+  background: #f8f8f8;
+}
+
+.left {
+  max-width: 550px;
+}
+
+.badge {
+  display: inline-block;
+  background: #222e46;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+.left h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #222e46;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.shop {
+  background: #ff7f00;
+  color: white;
+  border: none;
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.learn {
+  background: white;
+  border: 2px solid #222e46;
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222e46;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

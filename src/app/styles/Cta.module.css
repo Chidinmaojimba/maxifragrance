@@ -1,0 +1,49 @@
+.cta {
+  padding: 120px 8%;
+  background: #222e46;
+  text-align: center;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.cta button {
+  padding: 18px 40px;
+  background: #ff7f00;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta button:hover {
+  background: white;
+  color: #222e46;
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 80px 5%;
+  }
+
+  .cta h2 {
+    font-size: 34px;
+  }
+
+  .cta p {
+    font-size: 16px;
+  }
+}

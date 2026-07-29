@@ -1,0 +1,93 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  top: 100px;
+}
+
+.card {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.card h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #0c1930;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #666;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card li:hover {
+  color: #fc7d00;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags button {
+  padding: 8px 14px;
+  border: none;
+  background: #f5f5f5;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tags button:hover {
+  background: #fc7d00;
+  color: white;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #777;
+}
+
+.sizeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.sizeGrid button {
+  padding: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sizeGrid button:hover {
+  border-color: #fc7d00;
+  color: #fc7d00;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: static;
+  }
+}
