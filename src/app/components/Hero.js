@@ -1,8 +1,11 @@
-// "use client";
+"use client";
 import Image from "next/image";
 import styles from "../styles/Hero.module.css";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+  const router = useRouter();
+
   return (
     <section className={styles.hero}>
       <div className={styles.left}>
@@ -23,7 +26,12 @@ export default function Hero() {
         </p>
 
         <div className={styles.buttons}>
-          <button className={styles.shop}>Shop Collection</button>
+          <button
+            className={styles.shop}
+            onClick={() => router.push("/boutique-shop")}
+          >
+            Shop Collection
+          </button>
 
           <button className={styles.learn}>Learn More</button>
         </div>
@@ -31,7 +39,7 @@ export default function Hero() {
 
       <div className={styles.right}>
         <Image
-          src="/images/hero.png"
+          src="/images/difset.webp"
           alt="Hero Perfume"
           width={550}
           height={650}

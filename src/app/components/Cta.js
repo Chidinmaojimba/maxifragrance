@@ -1,7 +1,10 @@
 "use client";
+import { useRouter } from "next/navigation";
 import styles from "../styles/Cta.module.css";
 
 export default function Cta() {
+  const router = useRouter();
+
   return (
     <section className={styles.cta}>
       <h2>
@@ -15,7 +18,12 @@ export default function Cta() {
         diffusers crafted to leave lasting impressions.
       </p>
 
-      <button>Shop Now</button>
+      <button
+        className={styles.shopBtn}
+        onClick={() => router.push("/boutique-shop")}
+      >
+        Shop Now
+      </button>
     </section>
   );
 }

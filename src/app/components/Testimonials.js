@@ -1,22 +1,20 @@
-// "use client";
-
 import styles from "../styles/Testimonials.module.css";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Bryan",
     role: "Verified Customer",
     review:
       "The fragrance lasts all day and the packaging is absolutely luxurious. Definitely buying again!",
   },
   {
-    name: "David Michael",
+    name: "Bobo",
     role: "Perfume Enthusiast",
     review:
-      "Maxi Fragrance exceeded my expectations. The reed diffuser transformed my living room.",
+      "Ohr exceeded my expectations. The reed diffuser transformed my living room.",
   },
   {
-    name: "Chidinma",
+    name: "Anthony",
     role: "Loyal Customer",
     review:
       "Elegant scents, fast delivery, and amazing customer service. Highly recommended!",

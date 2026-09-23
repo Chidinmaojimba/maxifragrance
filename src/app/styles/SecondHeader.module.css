@@ -1,0 +1,164 @@
+.secondHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background: rgba(252, 249, 248, 0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(117, 119, 126, 0.3);
+}
+
+.headerContainer {
+  max-width: 1440px;
+  min-height: 88px;
+  margin: 0 auto;
+  padding: 16px 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.brandName {
+  color: #0c1930;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 30px;
+}
+
+.headerNav a {
+  color: #45474d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.headerNav a:hover {
+  color: #0c1930;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+
+  border-bottom: 1px solid #c5c6ce;
+}
+
+.searchBox span {
+  color: #75777e;
+  font-size: 22px;
+}
+
+.searchBox input {
+  width: 190px;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #1c1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.searchBox input::placeholder {
+  color: #75777e;
+}
+
+.headerIcon,
+.cartIcon {
+  position: relative;
+
+  color: #0c1930;
+  font-size: 23px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #974900;
+  color: white;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .headerContainer {
+    padding: 16px 40px;
+  }
+
+  .headerNav {
+    gap: 15px;
+    margin-left: 10px;
+  }
+
+  .searchBox {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    min-height: 75px;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .brandName {
+    font-size: 23px;
+  }
+
+  .headerNav {
+    display: none;
+  }
+
+  .headerActions {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brandName {
+    font-size: 20px;
+  }
+
+  .headerIcon,
+  .cartIcon {
+    font-size: 20px;
+  }
+}

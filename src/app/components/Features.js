@@ -1,4 +1,3 @@
-// "use client";
 import { FaShippingFast, FaMedal, FaLock, FaHeadset } from "react-icons/fa";
 
 import styles from "../styles/Features.module.css";

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div>
-          <h2>Maxi Fragrance</h2>
+          <h2>Ohr</h2>
 
           <p>
             Luxury perfumes, candles, reed diffusers and car diffusers designed
@@ -19,7 +19,7 @@ export default function Footer() {
           <h3>Quick Links</h3>
 
           <Link href="/">Home</Link>
-          <Link href="/shop">Shop</Link>
+          <Link href="/boutique-shop">Shop</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
         </div>
@@ -29,15 +29,13 @@ export default function Footer() {
 
           <p>Lagos, Nigeria</p>
 
-          <p>info@maxifragrance.com</p>
+          <p>maxihub888@gmail.com</p>
 
-          <p>+234 XXX XXX XXXX</p>
+          <p>+234 9038104805</p>
         </div>
       </div>
 
-      <div className={styles.bottom}>
-        © 2026 Maxi Fragrance. All Rights Reserved.
-      </div>
+      <div className={styles.bottom}>© 2026 Ohr. All Rights Reserved.</div>
     </footer>
   );
 }

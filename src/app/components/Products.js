@@ -4,22 +4,22 @@ import styles from "../styles/Products.module.css";
 
 const products = [
   {
-    image: "/images/product1.png",
+    image: "/images/candles.webp",
     name: "Maxi Savoir Candle",
     price: "₦18,000",
   },
   {
-    image: "/images/product2.png",
+    image: "/images/diffuser.webp",
     name: "Reed Diffuser",
     price: "₦22,000",
   },
   {
-    image: "/images/product3.png",
+    image: "/images/difset.webp",
     name: "Car Diffuser",
     price: "₦12,500",
   },
   {
-    image: "/images/product4.png",
+    image: "/images/perf.webp",
     name: "Luxury Perfume",
     price: "₦38,000",
   },
