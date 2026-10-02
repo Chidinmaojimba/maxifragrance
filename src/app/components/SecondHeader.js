@@ -12,12 +12,11 @@ function SecondHeader() {
           Ohr
         </Link>
 
-        {/* Navigation Links */}
         <nav className={styles.headerNav}>
-          <Link href="/">Savoir</Link>
-          <Link href="/designer">Designer</Link>
-          <Link href="/niche">Niche</Link>
-          <Link href="/heritage">Heritage</Link>
+          <Link href="/">Ohr</Link>
+          <Link href="/boutique-shop">Designer</Link>
+          <Link href="/my-account">Account</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
 
         {/* Header Actions */}

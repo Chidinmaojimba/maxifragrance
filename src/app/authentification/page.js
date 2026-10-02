@@ -21,15 +21,9 @@ export default function Login() {
       <section className={styles.imageSection}>
         <div className={styles.imageOverlay}></div>
 
-        {/* <img
-          src="/images/auth/savoir-perfume.jpg"
-          alt="Maxi Fragrance Savoir perfume"
-          className={styles.backgroundImage}
-        /> */}
-
         <img
           src="/images/candles.webp"
-          alt="Maxi Fragrance Savoir perfume"
+          alt="Maxi Fragrance Ohr perfume"
           className={styles.backgroundImage}
         />
 

@@ -184,7 +184,6 @@ function Cart() {
         </div>
       </main>
 
-      {/* <footer></footer> */}
       <Footer />
     </div>
   );
