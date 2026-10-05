@@ -2,10 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import SecondHeader from "../components/SecondHeader";
-
 import Footer from "../components/Footer";
 import styles from "../styles/cart.module.css";
+import Navbar from "../components/Navbar";
 
 function Cart() {
   const [cartItems, setCartItems] = useState([
@@ -70,7 +69,7 @@ function Cart() {
 
   return (
     <div className={styles.cartPage}>
-      <SecondHeader />
+      <Navbar />
 
       <main className={styles.cartMain}>
         {/* Breadcrumb */}

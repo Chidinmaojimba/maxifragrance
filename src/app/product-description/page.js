@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import SecondHeader from "../components/SecondHeader";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import styles from "../styles/Product-description.module.css";
@@ -47,7 +47,7 @@ export default function ProductDescription() {
 
   return (
     <>
-      <SecondHeader />
+      <Navbar />
 
       <main className={styles.productPage}>
         {/* Breadcrumb */}
