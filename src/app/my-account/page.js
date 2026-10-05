@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
-import SecondHeader from "../components/SecondHeader";
+import Navbar from "../components/Navbar";
 import styles from "../styles/my-account.module.css";
 
 const wishlistItems = [
@@ -47,7 +47,7 @@ export default function AccountPage() {
 
   return (
     <>
-      <SecondHeader />
+      <Navbar />
 
       <main className="account-main">
         <div className="account-container">

@@ -1,49 +1,251 @@
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 8%;
+  gap: 30px;
+  padding: 20px 8%;
   background: #222e46;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-sizing: border-box;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: #ff7f00;
+  text-decoration: none;
+  white-space: nowrap;
 }
+
+/* =========================
+   NAVIGATION
+========================= */
 
 .nav {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 25px;
 }
 
 .nav a {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  white-space: nowrap;
 }
 
 .nav a:hover {
   color: #ff7f00;
 }
 
+/* =========================
+   RIGHT SIDE ACTIONS
+========================= */
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 190px;
+  height: 42px;
+  padding: 0 12px;
+  background: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.searchIcon {
+  font-size: 20px;
+  color: #222e46;
+}
+
+.searchBox input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #222e46;
+  font-size: 14px;
+}
+
+.searchBox input::placeholder {
+  color: #777;
+}
+
+/* =========================
+   CART ICON
+========================= */
+
+.cartIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cartIcon:hover {
+  color: #ff7f00;
+}
+
+/* Cart Number */
+
+.cartBadge {
+  position: absolute;
+  top: -4px;
+  right: -5px;
+
+  min-width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px 5px;
+  border-radius: 50%;
+
+  background: #ff7f00;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* =========================
+   SHOP NOW BUTTON
+========================= */
+
 .button {
   background: #ff7f00;
   color: white;
   border: none;
-  padding: 14px 24px;
+  padding: 12px 20px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.3s ease;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .button:hover {
   background: white;
   color: #222e46;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+  .header {
+    padding: 18px 5%;
+  }
+
+  .nav {
+    gap: 18px;
+  }
+
+  .searchBox {
+    width: 150px;
+  }
+
+  .button {
+    padding: 11px 16px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 18px 5%;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    padding-top: 5px;
+  }
+
+  .actions {
+    margin-left: auto;
+  }
+
+  .searchBox {
+    width: 150px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .header {
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .searchBox {
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+    background: transparent;
+  }
+
+  .searchBox input {
+    display: none;
+  }
+
+  .searchIcon {
+    color: white;
+    font-size: 22px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .cartIcon {
+    font-size: 21px;
+  }
 }

@@ -1,5 +1,5 @@
 "use client";
-import SecondHeader from "../components/SecondHeader";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import ShopHeader from "../components/ShopHeader";
@@ -10,7 +10,7 @@ import styles from "../styles/Boutique-shop.module.css";
 export default function BoutiqueShop() {
   return (
     <>
-      <SecondHeader />
+      <Navbar />
 
       <main className={styles.main}>
         <ShopHeader />
