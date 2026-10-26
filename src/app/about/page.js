@@ -18,7 +18,7 @@ export default function About() {
           <div className={styles.heroOverlay}></div>
 
           <div className={styles.heroContent}>
-            <p className={styles.eyebrow}>THE STORY OF MAXI SAVOIR</p>
+            <p className={styles.eyebrow}>THE STORY OF OHR</p>
 
             <h1>
               The Art of
@@ -146,7 +146,7 @@ export default function About() {
 
         {/* Call To Action */}
         <section className={styles.ctaSection}>
-          <p className={styles.eyebrow}>EXPLORE MAXI SAVOIR</p>
+          <p className={styles.eyebrow}>EXPLORE OHR</p>
 
           <h2>
             Find a Scent
